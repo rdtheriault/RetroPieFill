@@ -16,8 +16,6 @@ fileName = "list.txt"
 files = os.listdir(path)
 #create the file
 f= open(fileName,"w+")
-#grab the new folders
-folders = os.listdir(path2) #files in new location
 
 #move files out of subfolders.
 for file in files:
@@ -27,6 +25,9 @@ for file in files:
     with zipfile.ZipFile(path+"/"+file,"r") as zip_ref:
       zip_ref.extractall(path2+"/"+name)
 
+#grab the new folders
+folders = os.listdir(path2) #files in new location      
+      
 #rename folders
 for name in folders:
   os.rename(path2+"/"+name, path2+"/"+name.replace(" ", ""))
