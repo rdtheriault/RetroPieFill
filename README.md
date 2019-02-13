@@ -11,4 +11,4 @@ Finally, creates a list of the ROMs you moved as a text file.
 Use this to unzip a bunch of zip files and move them to another folder. It also renames to remove spaces.
 
 ## UnzipMoveRename2.py
-Update to version one, code is not as clean but the results are more clean. Removes the (U) and [!] as well as deletes empty folders.
+Update to version one, code is not as clean but the results are more clean. Removes the (U) and [!] as well as deletes empty folders. Also creates a list of the files moved to the new folder. This pretty much allows a bunch of zips to be downloaded into one file (should be of same type) then unzip, rename, move, those files into a new folder.
